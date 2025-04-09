@@ -32,6 +32,8 @@ public enum PacketCommand {
     PLAYER_UPDATE,
     PLAYER_TEAM_CHANGE,
 
+    UPDATE_RATING,
+
     /**
      * A packet replacing a Client's knowledge of all bot settings (S -> C) or updating the Server on a single
      * bot's settings (C -> S). Does not invoke any actual changes to bots.

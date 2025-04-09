@@ -49,6 +49,9 @@ public final class Player extends TurnOrdered {
     private transient IGame game;
 
     private String name;
+
+    // Nouveau champ pour le rating (initialisé à 1500)
+    private double rating = 1500.0;
     private String email;
     private final int id;
 
@@ -207,6 +210,14 @@ public final class Player extends TurnOrdered {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 
     public String getEmail() {

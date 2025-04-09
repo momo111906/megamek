@@ -114,4 +114,9 @@ public class GameManagerPacketHelper {
     private IGame game() {
         return gameManager.getGame();
     }
+
+    public Packet createRatingUpdatePacket(int playerAId, double ratingA, int playerBId, double ratingB) {
+        return new Packet(PacketCommand.UPDATE_RATING, playerAId, ratingA, playerBId, ratingB);
+    }
+
 }
